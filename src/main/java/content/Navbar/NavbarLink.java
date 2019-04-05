@@ -12,9 +12,10 @@ public class NavbarLink {
     @Override
     public String toString() {
         StringBuffer sb = new StringBuffer();
-        sb.append("<a href='").append(this.link).append("'>").append(this.name).append("</a>");
+        sb.append("<a class=\"nav-link\" href=\"'").append(this.link).append("'>").append(this.name).append("</a>");
         return sb.toString();
     }
+
 
     public static void main(String[] args) {
         NavbarLink navbarLink = new NavbarLink("www.google.com", "Google");
